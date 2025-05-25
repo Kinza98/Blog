@@ -3,7 +3,7 @@
   <head>
     <title>My Blog</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="kinza" />
     <meta name="description" content="My own Blog" />
     <meta name="keywords" content="blog, news, post" />
@@ -16,10 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="base-bgcolor">
+    <header class="base-bgcolor fixed">
       <div class="d-flex f-row fa-center questrial-regular fj-space-bw pd-st ">
         <a href="#" id="logo">My Blog</a>
         <nav>
@@ -34,27 +35,41 @@
     </header>
     <main class="d-flex fa-center fj-center f-col">
       <section id="banner" class="d-flex fj-center fa-center">
-        <div class="d-flex w-100">
+        <div class="d-flex wrap w-100">
           <div class="banner-left questrial-regular d-flex f-col fj-center">
-            <h1 class="base-color">My Personal Blog</h1>
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, dolorem.</span>
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, dolorem.</span>
+            <h1 class="base-color">Stories that sit with you like morning light.</h1>
+            <p>
+              Welcome to my little corner of the internet — a place where I slow down, reflect, and write about the moments that often go unnoticed. 
+              Here, you'll find stories from everyday life, quiet observations, lessons learned the hard (or gentle) way, and thoughts I don't always say out loud.
+            </p>
+            <div class="btns d-flex fw">
+              <button class="btn-orange"><a href="#">Read Articles</a></button>
+              <button class="btn-white"><a href="#">Contact me</a></button>
+            </div>
           </div>
-          <div class="banner-right">
-            <img src="images/art.jpg" alt="">
-            <img src="images/vegetables.jpg" alt="">
+          <div class="banner-right d-flex fj-center fa-center">
+            <div class="relative">
+              <img src="images/photo.jpg" alt="">
+              <span>Fragments & Feelings</span>
+            </div>
           </div>
         </div>
       </section>
-      <section id="subscribe" class="base-bgcolor questrial-regular d-flex pd-st fj-center fa-center f-col">
-        <h2>Subscribe</h2>
-        <form class="d-flex">
+      <section id="subscribe" class="questrial-regular d-flex fj-center fa-center f-col">
+        <header>
+          <h2 class="questrial-regular">Stay Updated</h2>
+          <p>Get the latest articles delivered to your inbox</p>
+        </header>
+        <form class="d-flex fj-center fa-center">
           <input type="email" name="subscribe" placeholder="Email">
-          <button>submit</button>
+          <button>Subscribe</button>
         </form>
       </section>
       <section id="blog-posts" class="pt-st d-flex fj-center fa-center f-col">
-        <h2 class="questrial-regular">Recent Blogs</h2>
+        <header class="text-center">
+          <h2 class="questrial-regular">Latest Articles</h2>
+          <p>Thoughts, insights, and stories from my journey in technology, design, and life</p>
+        </header>
         <div class="d-flex f-row fw fa-center fj-center fw">
           <article class="d-flex fj-center f-col">
             <img src="images/traffic.jpg" alt="blog">
@@ -108,8 +123,8 @@
       </section>
       <section id="contact" class="pt-st text-center">
         <header>
-          <h4 class="questrial-regular">Share Your Thoughts</h4>
-          <span>I'd love to hear from you! Drop me a message and let's connect over our shared interests.</span>
+          <h2 class="questrial-regular">Share Your Thoughts</h2>
+          <p>I'd love to hear from you! Drop me a message and let's connect over our shared interests.</p>
         </header>
         <form action="" class="pt-st2">
           <div class="d-flex fj-center fa-center">
@@ -122,8 +137,8 @@
         </form>
       </section>
     </main>
-    <footer class="base-bgcolor questrial-regular">
-      <p>Copyright 2025 &copy; Kinza Ijaz</p>
+    <footer class="footer base-bgcolor questrial-regular">
+      <p>Copyright 2025 <sup>&copy;</sup> Kinza Ijaz</p>
     </footer>
     <script src="script.js"></script>
   </body>

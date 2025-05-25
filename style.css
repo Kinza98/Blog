@@ -9,6 +9,7 @@
   --secondary-color: #2ecc71;
   --font-base: 1rem;
   --padding-section: 2rem;
+  font-size: 16px;
 }
 
 .d-flex{
@@ -82,7 +83,7 @@ header div{
 }
 
 header #logo{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 header a{
@@ -126,12 +127,18 @@ nav ul{
   background-color: #24b291;
   width: 100%;
   position: fixed;
-  top: 55px;
+  top: 90px;
   left: 0;
   right: 0;
   display: none;
   flex-direction: column;
   padding-bottom: 1.5em;
+  bottom: 0;
+  justify-content: flex-start;
+  z-index: 1000;
+  text-align: left;
+  border-top: 1px solid white;
+  padding-top: 1em;
 }
 
 nav ul li{
@@ -140,7 +147,13 @@ nav ul li{
 
 nav ul li a{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+nav ul li a:hover{
+  cursor: pointer;
+  color: white;
 }
 
 main{
@@ -149,7 +162,7 @@ main{
 }
 
 section{
-  width: 900px;
+  width: fit-content;
 }
 
 section#subscribe{
@@ -364,38 +377,76 @@ img{
   box-shadow: 10px 10px 10px #00000030;
 }
 
+#contact form{
+  background: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px #d6cfcf;
+  padding: 3em 2em;
+}
+
 #contact input{
   width: 100%;
-  border: none;
-  border-bottom: 1px solid black;
-  padding: 12px 5px;
-  font-size: 1rem;
-  margin-bottom: 2em;
+  font-size: 0.8rem;
+  margin-bottom: 1.5em;
+  border: 1px solid #7ad07a;
+  border-radius: 15px;
+  padding: 7px 15px;
+  outline: none;
+  box-shadow: none;
+}
+
+form .d-flex{
+  flex-wrap: wrap;
 }
 
 #contact input:nth-child(1){
-  margin-right: 10px;
-}
-
-#contact input:nth-child(2){
-  margin-left: 10px;
+  margin-right: 0em;
 }
 
 #contact textarea{
   width: 100%;
   height: 8em;
-  border: none;
-  border-bottom: 1px solid black;
+  font-size: 0.8rem;
+  margin-bottom: 1.5em;
+  border: 1px solid #7ad07a;
+  border-radius: 15px;
+  padding: 10px 20px;
+  outline: none;
+  box-shadow: none;
+}
+
+#contact input:focus,
+#contact textarea:focus{
+  border-color: green;
 }
 
 #contact #submit{
-  background-color: #ddf1e5;
+  background-color: #24b291;
   border: none;
   border-radius: 10px;
   max-width: 10em;
-  margin: 2em auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: capitalize;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 5px 2px 15px #d2d2d2;
+  padding: 0.5em 1em;
+  margin-bottom: 0;
+}
+
+#contact #submit:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  animation: scaleBtn 0.1s ease;
+}
+
+@keyframes scaleBtn {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
 }
 
 h4{
@@ -411,6 +462,7 @@ footer{
 
 .menu-icon{
   display: block;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 350px) {
@@ -447,6 +499,9 @@ footer{
     width: 25em;
     height: 15em;
   }
+}
+
+@media screen and (min-width: 770px) {
 
   nav ul{
     position: relative;
@@ -456,6 +511,9 @@ footer{
     margin-bottom: 0;
     display: flex;
     padding-bottom: 0;
+    justify-content: space-between;
+    border: none;
+    padding-top: 0;
   }
 
   .menu-icon{
@@ -467,10 +525,46 @@ footer{
   }
 
   nav ul li a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   
   header #logo {
-    font-size: 3rem;
+    font-size: 2rem;
+  }  
+  
+  form .d-flex{
+    flex-wrap: nowrap;
+  }
+
+  #contact input:nth-child(1){
+    margin-right: 1em;
+  }
+
+  #contact form{
+    padding: 2em;
+    box-shadow: 10px 10px 30px #d6cfcf;
+  }
+
+  #contact input,
+  #contact textarea{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 1.5em;
+  }
+
+  #contact #submit{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (min-width: 990px) {
+  section{
+    width: 900px;
+  }
+
+  #contact form{
+    padding: 2em;
   }
 }

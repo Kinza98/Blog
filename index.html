@@ -16,130 +16,183 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="base-bgcolor fixed">
-      <div class="d-flex f-row fa-center questrial-regular fj-space-bw pd-st ">
-        <a href="#" id="logo">My Blog</a>
-        <nav>
-          <span class="menu-icon glyphicon glyphicon-align-justify" onclick="menuToggle(event)"></span>
-          <ul class="fa-center questrial-regular" id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <div class="blog-container">
+      <div class="pre-loader">
+        <div></div>
       </div>
-    </header>
-    <main class="d-flex fa-center fj-center f-col">
-      <section id="banner" class="d-flex fj-center fa-center">
-        <div class="d-flex wrap w-100">
-          <div class="banner-left questrial-regular d-flex f-col fj-center">
-            <h1 class="base-color">Stories that sit with you like morning light.</h1>
-            <p>
-              Welcome to my little corner of the internet — a place where I slow down, reflect, and write about the moments that often go unnoticed. 
-              Here, you'll find stories from everyday life, quiet observations, lessons learned the hard (or gentle) way, and thoughts I don't always say out loud.
-            </p>
-            <div class="btns d-flex fw">
-              <button class="btn-orange"><a href="#">Read Articles</a></button>
-              <button class="btn-white"><a href="#">Contact me</a></button>
-            </div>
-          </div>
-          <div class="banner-right d-flex fj-center fa-center">
-            <div class="relative">
-              <img src="images/photo.jpg" alt="">
-              <span>Fragments & Feelings</span>
-            </div>
-          </div>
+      <header class="base-bgcolor fixed" >
+        <div class="d-flex f-row fa-center questrial-regular fj-space-bw pd-st ">
+          <a href="#" id="logo">My Blog</a>
+          <nav>
+            <span class="menu-icon glyphicon glyphicon-align-justify" onclick="menuToggle(event)"></span>
+            <ul class="fa-center questrial-regular" id="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#article">Articles</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
-      <section id="subscribe" class="questrial-regular d-flex fj-center fa-center f-col">
-        <header>
-          <h2 class="questrial-regular">Stay Updated</h2>
-          <p>Get the latest articles delivered to your inbox</p>
-        </header>
-        <form class="d-flex fj-center fa-center">
-          <input type="email" name="subscribe" placeholder="Email">
-          <button>Subscribe</button>
-        </form>
-      </section>
-      <section id="blog-posts" class="pt-st d-flex fj-center fa-center f-col">
-        <header class="text-center">
-          <h2 class="questrial-regular">Latest Articles</h2>
-          <p>Thoughts, insights, and stories from my journey in technology, design, and life</p>
-        </header>
-        <div class="d-flex f-row fw fa-center fj-center fw">
-          <article class="d-flex fj-center f-col">
-            <img src="images/traffic.jpg" alt="blog">
-            <div class="about fa-center fj-center questrial-regular">
-              <h3 id="title" class="questrial-regular"><a href="" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
-                sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
-                sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
-              </span>
-              <footer class="d-flex fj-space-bw">
-                <time datetime="">May 5, 2025</time>
-                <span>5 min read</span>
-              </footer>
+      </header>
+      <main class="d-flex fa-center fj-center f-col" id="home">
+        <section id="banner" class="d-flex fj-center fa-center">
+          <div class="d-flex wrap w-100" >
+            <div class="banner-left questrial-regular d-flex f-col fj-center">
+              <h1 class="base-color">Stories that sit with you like morning light.</h1>
+              <p>
+                Welcome to my little corner of the internet — a place where I slow down, reflect, and write about the moments that often go unnoticed. 
+                Here, you'll find stories from everyday life, quiet observations, lessons learned the hard (or gentle) way, and thoughts I don't always say out loud.
+              </p>
+              <div class="btns d-flex fw">
+                <button class="btn-orange"><a href="#article">Read Articles</a></button>
+                <button class="btn-white"><a href="#contact">Contact me</a></button>
+              </div>
             </div>
-          </article>
-          <article class="d-flex fj-center f-col">
-            <img src="images/traffic.jpg" alt="blog">
-            <div class="about fa-center fj-center questrial-regular">
-              <h3 id="title" class="questrial-regular"><a href="" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
-                sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
-                sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
-              </span>
-              <footer class="d-flex fj-space-bw">
-                <time datetime="">May 5, 2025</time>
-                <span>5 min read</span>
-              </footer>
+            <div class="banner-right d-flex fj-center fa-center">
+              <div class="relative">
+                <img src="images/photo.jpg" alt="">
+                <span>Beneath the Surface</span>
+              </div>
             </div>
-          </article>
-          <article class="d-flex fj-center f-col">
-            <img src="images/traffic.jpg" alt="blog">
-            <div class="about fa-center fj-center questrial-regular">
-              <h3 id="title" class="questrial-regular"><a href="" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
-                sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
-                sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
-              </span>
-              <footer class="d-flex fj-space-bw">
-                <time datetime="">May 5, 2025</time>
-                <span>5 min read</span>
-              </footer>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section id="contact" class="pt-st text-center">
-        <header>
-          <h2 class="questrial-regular">Share Your Thoughts</h2>
-          <p>I'd love to hear from you! Drop me a message and let's connect over our shared interests.</p>
-        </header>
-        <form action="" class="pt-st2">
-          <div class="d-flex fj-center fa-center">
-            <input type="text" name="First Name" placeholder="Firs Name" id="firstName" required/>
-            <input type="text" name="Last Name" placeholder="Last Name" id="lastName" required/>
           </div>
-          <input type="email" name="Email" placeholder="Email" id="email" required/>
-          <textarea name="comments" id="comment" placeholder="Write your comment here..." width="100%"></textarea>
-          <input type="submit" id="submit" value="submit">
-        </form>
-      </section>
-    </main>
-    <footer class="footer base-bgcolor questrial-regular">
-      <p>Copyright 2025 <sup>&copy;</sup> Kinza Ijaz</p>
-    </footer>
+        </section>
+        <section id="subscribe" class="questrial-regular d-flex fj-center fa-center f-col">
+          <header>
+            <h2 class="questrial-regular">Stay Updated</h2>
+            <p>Get the latest articles delivered to your inbox</p>
+          </header>
+          <form class="d-flex fj-center fa-center">
+            <input type="email" name="subscribe" placeholder="Email">
+            <button>Subscribe</button>
+          </form>
+        </section>
+        <section id="main-posts-section" class="d-flex fw">
+          <div>
+            <!-- <header class="text-left">
+              <h2 class="questrial-regular">Latest Article</h2>
+              <p>Read the newest Article</p>
+            </header> -->
+            <article class="relative">
+              <img src="images/theSky.jpg" alt="">
+              <time datetime=""><span></span>Just now</time>
+              <div class="description">
+                <h4><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, labore!</a></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aspernatur commodi molestiae repellat, voluptate aut doloremque magni obcaecati asperiores ipsam!</p>
+              </div>
+            </article>
+          </div>
+
+          <aside>
+            <header class="text-left">
+              <h2 class="questrial-regular">Spotlight</h2>
+            </header>
+            <div class="d-flex f-col">
+              <article>
+                <h4><a href="post.html">Lorem ipsum dolor</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint amet consectetur adipisicing elit. Fuga, sint</p>
+              </article>
+              <article>
+                <h4><a href="post.html">Lorem ipsum dolor</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint amet consectetur adipisicing elit. Fuga, sint</p>
+              </article>
+              <article>
+                <h4><a href="post.html">Lorem ipsum dolor</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint amet consectetur adipisicing elit. Fuga, sint</p>
+              </article>
+              <article>
+                <h4><a href="post.html">Lorem ipsum dolor</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint amet consectetur adipisicing elit. Fuga, sint</p>
+              </article>
+              <article>
+                <h4><a href="post.html">Lorem ipsum dolor</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint amet consectetur adipisicing elit. Fuga, sint</p>
+              </article>
+              <article>
+                <h4><a href="post.html">Lorem ipsum dolor</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sint amet consectetur adipisicing elit. Fuga, sint</p>
+              </article>
+            </div>
+          </aside>
+        </section>
+        <section id="blog-posts" class="pt-st d-flex fj-center fa-center f-col">
+          <header class="text-center">
+            <h2 class="questrial-regular">Read Articles</h2>
+            <p>Thoughts, insights, and stories from my journey in technology, design, and life</p>
+          </header>
+          <div class="d-flex f-row fw fa-center fj-center fw" id="article">
+            <article class="d-flex fj-center f-col">
+              <img src="images/traffic.jpg" alt="blog">
+              <div class="about fa-center fj-center questrial-regular">
+                <h3 id="title" class="questrial-regular"><a href="post.html" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                </span>
+                <footer class="d-flex fj-space-bw">
+                  <time datetime="">May 5, 2025</time>
+                  <span>5 min read</span>
+                </footer>
+              </div>
+            </article>
+            <article class="d-flex fj-center f-col">
+              <img src="images/traffic.jpg" alt="blog">
+              <div class="about fa-center fj-center questrial-regular">
+                <h3 id="title" class="questrial-regular"><a href="post.html" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                </span>
+                <footer class="d-flex fj-space-bw">
+                  <time datetime="">May 5, 2025</time>
+                  <span>5 min read</span>
+                </footer>
+              </div>
+            </article>
+            <article class="d-flex fj-center f-col">
+              <img src="images/traffic.jpg" alt="blog">
+              <div class="about fa-center fj-center questrial-regular">
+                <h3 id="title" class="questrial-regular"><a href="post.html" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                </span>
+                <footer class="d-flex fj-space-bw">
+                  <time datetime="">May 5, 2025</time>
+                  <span>5 min read</span>
+                </footer>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="contact" class="pt-st text-center">
+          <header>
+            <h2 class="questrial-regular">Share Your Thoughts</h2>
+            <p>I'd love to hear from you! Drop me a message and let's connect over our shared interests.</p>
+          </header>
+          <form action="" class="pt-st2">
+            <div class="d-flex fj-center fa-center">
+              <input type="text" name="First Name" placeholder="Firs Name" id="firstName" required/>
+              <input type="text" name="Last Name" placeholder="Last Name" id="lastName" required/>
+            </div>
+            <input type="email" name="Email" placeholder="Email" id="email" required/>
+            <textarea name="comments" id="comment" placeholder="Write your comment here..." width="100%"></textarea>
+            <input type="submit" id="submit" value="submit">
+          </form>
+        </section>
+      </main>
+      <footer class="footer base-bgcolor questrial-regular">
+        <p>Copyright 2025 <sup>&copy;</sup> Kinza Ijaz</p>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

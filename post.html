@@ -3,76 +3,123 @@
   <head>
     <title>My Blog</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="kinza" />
     <meta name="description" content="My own Blog" />
     <meta name="keywords" content="blog, news, post" />
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="d-flex f-row fa-center questrial-regular fj-space-bw pd-st">
-      <a href="#" id="logo">My Blog</a>
-      <nav>
-        <ul class="d-flex f-row fa-center questrial-regular fj-space-bw">
-          <li><a href="#">Contact me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <aside></aside>
-    <main class="d-flex fa-center fj-center f-col">
-      <section id="blogPost" class="raleway-regular">
-        <h2>Top 5 Tools for Productivity</h2>
-        <time> May 5, 2025</time>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
-          voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
-          quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
-          temporibus vero reiciendis.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
-          voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
-          quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
-          temporibus vero reiciendis.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
-          voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
-          quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
-          temporibus vero reiciendis.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
-          voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
-          quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
-          temporibus vero reiciendis.</p>
-      </section>
-      
-      <section id="posts articles" class="pt-st d-flex fj-center fa-center f-col">
-        <h2 class="questrial-regular">You Might Like</h2>
-        <div class="d-flex f-row fa-center fj-center fw">
-          <article>
-            <img src="images/blog1.jpg" alt="blog">
-            <div class="about fa-center fj-center">
-              <h3 id="title" class="questrial-regular">Health is Wealth</h3>
-            </div>
-          </article>
-          <article>
-            <img src="images/art.jpg" alt="blog">
-            <div class="about fa-center fj-center">
-              <h3 id="title" class="questrial-regular">Art comes to Life</h3>
-            </div>
-          </article>
-          <article>
-            <img src="images/technology.jpg" alt="blog">
-            <div class="about fa-center fj-center">
-              <h3 id="title" class="questrial-regular">Todays Life</h3>
-            </div>
-          </article>
+    <div class="blog-container">
+      <div class="pre-loader">
+        <div></div>
+      </div>
+      <header class="base-bgcolor fixed" >
+        <div class="d-flex f-row fa-center questrial-regular fj-space-bw pd-st ">
+          <a href="index.html" id="logo">My Blog</a>
+          <nav>
+            <span class="menu-icon glyphicon glyphicon-align-justify" onclick="menuToggle(event)"></span>
+            <ul class="fa-center questrial-regular" id="menu">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#article">Articles</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
-    </main>
-    <footer class="base-bgcolor questrial-regular">
-      <p>Copyright 2025 &copy; Kinza Ijaz</p>
-    </footer>
+      </header>
+      <main class="d-flex fa-center fj-center f-col">
+        <section id="blogPost" class="raleway-regular">
+          <h2>Top 5 Tools for Productivity</h2>
+          <time> May 5, 2025</time>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
+            voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
+            quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
+            temporibus vero reiciendis.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
+            voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
+            quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
+            temporibus vero reiciendis.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
+            voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
+            quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
+            temporibus vero reiciendis.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dicta, 
+            voluptate tempora voluptatibus placeat ea, facilis modi, pariatur perspiciatis 
+            quae voluptatum. Labore, molestias. Provident, adipisci. Quo praesentium 
+            temporibus vero reiciendis.</p>
+        </section>
+        
+        <section id="blog-posts" class="pt-st d-flex fj-center fa-center f-col">
+          <header class="text-center">
+            <h2 class="questrial-regular">Read Articles</h2>
+            <p>Thoughts, insights, and stories from my journey in technology, design, and life</p>
+          </header>
+          <div class="d-flex f-row fw fa-center fj-center fw" id="article">
+            <article class="d-flex fj-center f-col">
+              <img src="images/traffic.jpg" alt="blog">
+              <div class="about fa-center fj-center questrial-regular">
+                <h3 id="title" class="questrial-regular"><a href="post.html" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                </span>
+                <footer class="d-flex fj-space-bw">
+                  <time datetime="">May 5, 2025</time>
+                  <span>5 min read</span>
+                </footer>
+              </div>
+            </article>
+            <article class="d-flex fj-center f-col">
+              <img src="images/traffic.jpg" alt="blog">
+              <div class="about fa-center fj-center questrial-regular">
+                <h3 id="title" class="questrial-regular"><a href="post.html" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                </span>
+                <footer class="d-flex fj-space-bw">
+                  <time datetime="">May 5, 2025</time>
+                  <span>5 min read</span>
+                </footer>
+              </div>
+            </article>
+            <article class="d-flex fj-center f-col">
+              <img src="images/traffic.jpg" alt="blog">
+              <div class="about fa-center fj-center questrial-regular">
+                <h3 id="title" class="questrial-regular"><a href="post.html" class="base-color">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h3>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos accusamus, 
+                  sapiente vitae voluptatibus fugiat voluptate temporibus tempore harum optio.
+                </span>
+                <footer class="d-flex fj-space-bw">
+                  <time datetime="">May 5, 2025</time>
+                  <span>5 min read</span>
+                </footer>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="footer base-bgcolor questrial-regular">
+        <p>Copyright 2025 <sup>&copy;</sup> Kinza Ijaz</p>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

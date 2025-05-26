@@ -203,16 +203,15 @@ nav ul{
   top: 80px;
   left: 0;
   right: 0;
-  bottom: 0;
   display: none;
   flex-direction: column;
-  padding-bottom: 1.5em;
-  bottom: 0;
+  padding-bottom: 1.5rem;
   justify-content: flex-start;
   z-index: 1000;
   text-align: left;
   border-top: 1px solid var(--primary);
   padding-top: 1em;
+  box-shadow: 1px 1px 4px #d4a5a55c;
 }
 
 nav ul li{
@@ -363,8 +362,9 @@ button a:focus{
   position: absolute;
   bottom: 0;
   color: var(--primary);
-  font-size: 1.2rem;
-  /* letter-spacing: 2px; */
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 1;
   transform: rotate(-6deg) scale(1.4);
   z-index: 5;
   font-weight: 100;
@@ -372,6 +372,7 @@ button a:focus{
   right: 0;
   text-align: center;
   text-shadow: 1px 1px 1px var(--font-base);
+  padding: 0 2px;
 }
 
 .banner-right img:nth-child(1){
@@ -1010,6 +1011,7 @@ footer p{
     justify-content: space-between;
     border: none;
     padding-top: 0;
+    box-shadow: none;
   }
 
   .menu-icon{
@@ -1060,6 +1062,10 @@ footer p{
 
   #main-posts-section img {
     max-height: 500px;
+  }
+
+  .banner-right span{
+    letter-spacing: 0;
   }
 }
 
